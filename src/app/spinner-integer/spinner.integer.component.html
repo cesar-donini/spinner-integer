@@ -1,0 +1,9 @@
+<div class="component" id="touch">
+    <div [ngClass]="valuesLengthShows() < 4 ? 'visible' : 'not-visible'" [ngStyle]="getRotateStyle(4)">abc</div>
+    <div [ngClass]="valuesLengthShows() < 5 ? 'visible' : 'not-visible'" [ngStyle]="getRotateStyle(2)">abc</div>
+    <div class="rotate" [hidden]="value.rotate > 4 || value.rotate < -4"
+            [ngStyle]="getRotateStyle(value.rotate)" *ngFor="let value of values"
+            (click)="selectValue(value)">
+            <span class="value-margin">{{value.valor}}</span>
+    </div>
+</div>

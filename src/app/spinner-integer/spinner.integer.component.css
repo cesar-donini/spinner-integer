@@ -1,0 +1,16 @@
+.visible {
+    visibility: hidden;
+}
+
+.not-visible {
+    display: none;
+}
+
+.component {
+    height: 100px;
+    text-align: center;
+}
+.value-margin {
+    margin-left: 15px;
+    margin-right: 15px;
+}
